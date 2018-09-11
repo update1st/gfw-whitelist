@@ -12005,7 +12005,7 @@ function FindProxyForURL(url, host) {
 
     var ip = dnsResolve(host);
 
-    if (ip == null || ip == '' ||  isInNet(ip, '192.168.0.0', '255.255.255.0') || lookup_ip(ip)) {
+    if (ip == null || ip == '' ||  isInNet(ip, '192.168.0.0', '255.255.0.0') || lookup_ip(ip)) {
         return 'DIRECT';
     }
 
